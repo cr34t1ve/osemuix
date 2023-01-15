@@ -29,24 +29,26 @@ const image = `https://uploads-ssl.webflow.com/637f643d4e36527b45571b80/63c43cb4
 export default function Home() {
   return (
     <>
-      <title>{title}</title>
-      <meta name="description" content={title} />
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-      {/* <meta charset="utf-8" /> */}
-      <link rel="icon" href="/favicon32.png" />
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <meta name="theme-color" content="#357054" />
-      <link rel="apple-touch-icon" href="/favicon192.png" />
-      <meta property="og:image" content={image} />
+      <Head>
+        <title>{title}</title>
+        <meta name="description" content={title} />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        {/* <meta charset="utf-8" /> */}
+        <link rel="icon" href="/favicon32.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#357054" />
+        <link rel="apple-touch-icon" href="/favicon192.png" />
+        <meta property="og:image" content={image} />
 
-      <meta property="og:type" content="website" />
-      <meta property="og:title" content={title} />
-      <meta property="og:description" content={title} />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={title} />
 
-      <meta property="twitter:card" content={title} />
-      <meta property="twitter:title" content={title} />
-      <meta property="twitter:description" content={title} />
-      <meta property="twitter:image" content={title} />
+        <meta property="twitter:card" content={title} />
+        <meta property="twitter:title" content={title} />
+        <meta property="twitter:description" content={title} />
+        <meta property="twitter:image" content={title} />
+      </Head>
       <Main>
         <DesktopBanner src="/images/osemuix.com.svg" alt="" draggable="false" />
         <MobileBanner
