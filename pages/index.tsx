@@ -35,7 +35,7 @@ export default function Home() {
       {/* <meta charset="utf-8" /> */}
       <link rel="icon" href="/favicon32.png" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <meta name="theme-color" content="#0D0E13" />
+      <meta name="theme-color" content="#357054" />
       <link rel="apple-touch-icon" href="/favicon192.png" />
       <meta property="og:image" content={image} />
 
