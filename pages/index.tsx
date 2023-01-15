@@ -23,18 +23,30 @@ const helvetica = localFont({
   ],
 });
 
+const title = `Sebastian Livingstone's Portfolio`;
+const image = `https://uploads-ssl.webflow.com/637f643d4e36527b45571b80/63c43cb47bd0df4ed7cc6f73_OpenGraph.png`;
+
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>Sebastian Livingstone</title>
-        <meta
-          name="description"
-          content="Sebastian Livingstone personal website"
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <title>{title}</title>
+      <meta name="description" content={title} />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      {/* <meta charset="utf-8" /> */}
+      <link rel="icon" href="/favicon32.png" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta name="theme-color" content="#0D0E13" />
+      <link rel="apple-touch-icon" href="/favicon192.png" />
+      <meta property="og:image" content={image} />
+
+      <meta property="og:type" content="website" />
+      <meta property="og:title" content={title} />
+      <meta property="og:description" content={title} />
+
+      <meta property="twitter:card" content={title} />
+      <meta property="twitter:title" content={title} />
+      <meta property="twitter:description" content={title} />
+      <meta property="twitter:image" content={title} />
       <Main>
         <DesktopBanner src="/images/osemuix.com.svg" alt="" draggable="false" />
         <MobileBanner
