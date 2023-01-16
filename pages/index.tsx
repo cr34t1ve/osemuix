@@ -1,6 +1,7 @@
 /** @format */
 
 import Head from "next/head";
+import Link from "next/link";
 import { styled } from "@/stitches.config";
 import localFont from "@next/font/local";
 const helvetica = localFont({
@@ -67,11 +68,24 @@ export default function Home() {
             <strong>4 years of experience with using figma</strong> to Ideate,
             Design, and prototype user centric products for the web. When I am
             not designing, I also perform the role of being the CEO of &nbsp;
-            <span>Sunamigames</span> and <span>Rare Goods Only</span>. I am
-            currently working as a
+            <LinkText href="https://www.sunamigames.com/" target="_blank">
+              Sunamigames
+            </LinkText>{" "}
+            and{" "}
+            <LinkText href="https://raregoodsonly.webflow.io/" target="_blank">
+              Rare Goods Only
+            </LinkText>
+            . I am currently working as a
             <strong>
               {" "}
-              product designer at <span>New Comma</span>
+              product designer at{" "}
+              <LinkText
+                css={{ fontWeight: 700, color: "$white" }}
+                href="https://www.newcomma.com/"
+                target="_blank"
+              >
+                New Comma
+              </LinkText>
             </strong>
             , a startup in Africa connecting African creatives to lucrative
             opportunities
@@ -81,7 +95,9 @@ export default function Home() {
             color="yellow"
             css={{ marginTop: 33 }}
           >
-            <span>CONTACT ME &gt;&gt;&gt;</span>
+            <Contact href="https://www.instagram.com/osemuix/" target="_blank">
+              CONTACT ME &gt;&gt;&gt;
+            </Contact>
           </Text>
           <Text
             className={helvetica.className}
@@ -168,5 +184,32 @@ const Text = styled("p", {
         color: "$yellow",
       },
     },
+  },
+});
+
+const Contact = styled(Link, {
+  lineHeight: 2,
+  fontSize: 18,
+  textAlign: "left",
+  maxWidth: "59ch",
+  color: "$yellow",
+  transition: "all 350ms ease",
+  textDecoration: "underline",
+  "&:hover": {
+    transform: "translate(3%)",
+  },
+});
+
+const LinkText = styled(Link, {
+  display: "inline-block",
+  textDecoration: "underline",
+  color: "$primaryText",
+  fontWeight: 400,
+  transition: "all 350ms ease",
+  willChange: "transform",
+  cursor: "pointer",
+  "&:hover": {
+    color: "$white",
+    // fontWeight: 500,
   },
 });
