@@ -4,19 +4,21 @@ import { createStitches } from "@stitches/react";
 
 export const { styled, getCssText } = createStitches({
   theme: {
-    fonts: {
-      helvetica: "Helvetica Neue",
-    },
     colors: {
       hiContrast: "hsl(206,10%,5%)",
       white: "white",
-      primaryText: "rgba(215, 226, 221, 0.8)",
+      black: "black",
+      primaryText: "#D9D9D9",
+      secondaryText: "#666666",
+      tertiaryText: "#444444",
+      primaryStroke: "#141414",
+      hoverBackground: "#0A0A0A",
       yellow: "#FFDD3C",
     },
     fontSizes: {
-      1: "13px",
-      2: "15px",
-      3: "17px",
+      1: "10px",
+      2: "14px",
+      3: "16px",
     },
   },
   media: {
