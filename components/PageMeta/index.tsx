@@ -4,7 +4,7 @@ import Head from "next/head";
 import React from "react";
 
 export function PageMeta({
-  title = "Sebastian LivingStone",
+  title = "Sebastian Livingstone",
   image = "https://uploads-ssl.webflow.com/637f643d4e36527b45571b80/63c44c5bcff8189621075df8_OpenGraph.png",
   children,
 }: {

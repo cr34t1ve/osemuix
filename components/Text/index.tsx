@@ -56,5 +56,13 @@ export const Text = styled("p", {
       //   color: "$hyperlink",
       // },
     },
+    weight: {
+      regular: {
+        fontWeight: 400,
+      },
+      semiBold: {
+        fontWeight: 590,
+      },
+    },
   },
 });

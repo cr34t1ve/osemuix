@@ -9,6 +9,11 @@ export const sfPro = localFont({
       weight: "400",
       style: "normal",
     },
+    {
+      path: "./sf-pro-text-semibold.woff",
+      weight: "590",
+      style: "normal",
+    },
   ],
   fallback: ["arial"],
 });
