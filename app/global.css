@@ -1,0 +1,189 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  -webkit-font-smoothing: antialiased;
+  font-synthesis: none;
+  min-height: 100%;
+
+  --color-primary: #000000;
+  --color-secondary: #333333;
+  --color-tertiary: #666666;
+  --color-offwhite: rgba(0, 0, 0, 0.1);
+}
+
+a {
+  display: block;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+  color: var(--color-tertiary);
+  font-size: 20px;
+}
+
+h1 {
+  font-size: 32px;
+  color: var(--color-primary);
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 16px;
+  color: var(--color-secondary);
+  text-transform: uppercase;
+}
+
+span {
+  text-decoration: underline;
+  color: var(--color-primary);
+}
+
+strong {
+  color: var(--color-primary);
+  font-weight: inherit;
+}
+
+a {
+  display: inline;
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+.sticky-bottom {
+  position: sticky;
+  bottom: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--color-offwhite);
+  gap: 1px;
+  padding: 1px;
+}
+
+.grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* aspect-ratio: 290 / 223; */
+  height: 223px;
+  width: 290px;
+  background-color: white;
+  padding: 94px 76px;
+}
+
+.flex {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.flex-sb {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+.mb-35 {
+  margin-bottom: 35px;
+}
+
+.mw-435 {
+  max-width: 435px;
+}
+
+@media (max-width: 768px) {
+  .mb-20,
+  .mb-50,
+  .mb-35 {
+    margin-bottom: 30px;
+  }
+  .column {
+    width: 100%;
+  }
+  .grid {
+    width: 100%;
+  }
+
+  .grid-item {
+    height: 172px;
+    width: 100%;
+    padding: 0;
+  }
+
+  img {
+    width: 86px;
+  }
+
+  .flex-sb {
+    margin-bottom: 40px;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: var(--color-primary);
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 1000px;
+  background-color: var(--color-offwhite);
+  border: 2px solid var(--color-primary);
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--gray-500);
+}
