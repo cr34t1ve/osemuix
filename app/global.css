@@ -38,6 +38,11 @@ svg {
   max-width: 100%;
 }
 
+img {
+  transition: transform 0.2s ease-in-out;
+  will-change: transform;
+}
+
 input,
 button,
 textarea,
@@ -107,11 +112,20 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* aspect-ratio: 290 / 223; */
   height: 223px;
   width: 290px;
   background-color: white;
   padding: 94px 76px;
+  border: 1px solid transparent;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.grid-item:hover {
+  border-color: var(--color-primary);
+}
+
+.grid-item:hover img {
+  transform: scale(1.1);
 }
 
 .flex {
