@@ -56,7 +56,9 @@ export default function Page() {
           <p>
             If you ever want to have a chat about the products I am building,
             anime, weird science stuff or share a meme,{" "}
-            <Link href="mailto:osemuix@gmail.com">feel free to reach out.</Link>
+            <Link href="https://x.com/osemuix" target="_blank">
+              feel free to reach out.
+            </Link>
           </p>
         </div>
       </div>
